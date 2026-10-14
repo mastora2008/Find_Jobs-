@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FindJobs helps you discover meaningful work and take the next step in your career.">
+  <title>FindJobs — Find work that moves you</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+<button id="themeToggle" class="theme-toggle">
+    🌙 Dark Mode
+</button>
+
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Your next opportunity is closer than you think <a href="#jobs" data-page="jobs">Explore jobs <span>↗</span></a></div>
+  <header class="site-header">
+    <a href="#home" class="brand" data-page="home" aria-label="FindJobs home">
+      <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="17" cy="17" r="10.5"></circle><circle cx="17" cy="17" r="4.2"></circle><path d="M25 25 34 34"></path><path d="M12 17h10M17 12v10"></path></svg></span>
+      <span>Find<span>Jobs</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation">
+      <a href="#home" data-page="home" class="nav-link active">Home</a>
+      <a href="#jobs" data-page="jobs" class="nav-link">Find Jobs</a>
+      <a href="#about" data-page="about" class="nav-link">About Us</a>
+      <a href="#contact" data-page="contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" data-page="signin">Sign in</button>
+      <button class="button button-primary button-small" data-page="jobs">Get started <span>↗</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page active" id="homePage" data-view="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR FUTURE, OUR MISSION</div>
+          <h1>Find the right job.<br>Build a <span>better tomorrow.</span></h1>
+          <p class="hero-description">Discover opportunities that match your skills, goals, and ambition. Your next chapter starts here.</p>
+          <form class="hero-search search-form" id="heroSearch">
+            <label class="search-field"><span class="field-icon">⌕</span><input id="heroKeyword" type="search" placeholder="Job title, skill, or company" aria-label="Job title, skill, or company"></label>
+            <label class="search-field location-field"><span class="field-icon">⌖</span><input id="heroLocation" type="text" placeholder="City or remote" aria-label="Location"></label>
+            <button class="button button-primary" type="submit">Search jobs <span>→</span></button>
+          </form>
+          <div class="hero-proof">
+            <div class="proof-item"><span class="proof-icon">✓</span><div><strong>Curated opportunities</strong><small>Find your next step</small></div></div>
+            <div class="proof-item"><span class="proof-icon">✦</span><div><strong>Trusted employers</strong><small>Explore new teams</small></div></div>
+            <div class="proof-item"><span class="proof-icon">↗</span><div><strong>Career growth</strong><small>Make your move</small></div></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image"></div>
+          <div class="image-shade"></div>
+          <div class="floating-note note-top"><span class="note-icon">✦</span><div><strong>Dream big.</strong><small>Start somewhere.</small></div></div>
+          <div class="floating-card"><div class="floating-card-top"><span class="company-logo logo-blue">in</span><span class="status-pill">Featured</span></div><strong>Product Designer</strong><span class="muted">Brightside Studio</span><div class="mini-details"><span>⌖ Remote</span><span>◷ Full-time</span></div><div class="mini-salary">$70k–$95k <small>/ year</small></div></div>
+          <div class="hero-sticker">Your next<br><span>chapter</span> awaits ↗</div>
+        </div>
+      </section>
+
+      <section class="section categories-section">
+        <div class="section-heading"><div><span class="eyebrow">FIND YOUR SPACE</span><h2>Explore by <span>category</span></h2></div><button class="link-button" data-page="jobs">All categories <span>→</span></button></div>
+        <div class="category-grid">
+          <button class="category-card" data-category="Technology"><span class="category-icon cat-blue">⌘</span><strong>Technology</strong><small>Design, data & software</small><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="Marketing"><span class="category-icon cat-pink">✳</span><strong>Marketing</strong><small>Creative & digital</small><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="Finance"><span class="category-icon cat-green">◈</span><strong>Finance</strong><small>Business & numbers</small><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="Education"><span class="category-icon cat-orange">▱</span><strong>Education</strong><small>Teach & inspire</small><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="Healthcare"><span class="category-icon cat-cyan">✚</span><strong>Healthcare</strong><small>Care & wellbeing</small><span class="category-arrow">↗</span></button>
+          <button class="category-card" data-category="Design"><span class="category-icon cat-purple">✎</span><strong>Design</strong><small>Ideas made visual</small><span class="category-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="section featured-section" id="featuredJobs">
+        <div class="section-heading"><div><span class="eyebrow">HANDPICKED FOR YOU</span><h2>Featured <span>opportunities</span></h2><p class="section-subtitle">A few places where your next big idea could take shape.</p></div><button class="link-button" data-page="jobs">Browse all jobs <span>→</span></button></div>
+        <div class="featured-grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="cta-band"><div class="cta-orb orb-one"></div><div class="cta-orb orb-two"></div><div class="cta-content"><span class="eyebrow light-eyebrow">READY FOR WHAT'S NEXT?</span><h2>Your next opportunity<br>could change everything.</h2><p>Explore roles, discover teams, and take one step closer to your goals.</p><button class="button button-light" data-page="jobs">Find your next job <span>→</span></button></div><div class="cta-mark">F<span>J</span></div></section>
+    </section>
+
+    <section class="page" id="jobsPage" data-view="jobs">
+      <div class="jobs-hero"><div class="jobs-hero-content"><span class="eyebrow light-eyebrow">OPPORTUNITY STARTS HERE</span><h1>Find your <span>dream job.</span></h1><p>Search open roles and find a team where you can do your best work.</p></div><div class="jobs-hero-decoration">FJ<span>↗</span></div></div>
+      <div class="jobs-search-wrap"><form class="jobs-search search-form" id="jobsSearch"><label class="search-field"><span class="field-icon">⌕</span><input id="jobsKeyword" type="search" placeholder="Job title, skills, company" aria-label="Search jobs"></label><label class="search-field"><span class="field-icon">⌖</span><input id="jobsLocation" type="text" placeholder="Location or remote" aria-label="Location"></label><button class="button button-primary" type="submit">Search jobs <span>→</span></button></form></div>
+      <div class="jobs-layout section">
+        <aside class="filter-panel">
+          <div class="filter-heading"><h3>Filters</h3><button id="clearFilters" class="link-button tiny">Clear all</button></div>
+          <div class="filter-group"><h4>Job type</h4><label class="check-row"><input type="checkbox" value="Full-time" name="jobType"> Full-time</label><label class="check-row"><input type="checkbox" value="Part-time" name="jobType"> Part-time</label><label class="check-row"><input type="checkbox" value="Contract" name="jobType"> Contract</label><label class="check-row"><input type="checkbox" value="Internship" name="jobType"> Internship</label></div>
+          <div class="filter-group"><h4>Work style</h4><label class="check-row"><input type="checkbox" value="Remote" name="workStyle"> Remote</label><label class="check-row"><input type="checkbox" value="Hybrid" name="workStyle"> Hybrid</label><label class="check-row"><input type="checkbox" value="On-site" name="workStyle"> On-site</label></div>
+          <div class="filter-group"><h4>Category</h4><select id="categoryFilter" class="filter-select"><option value="">All categories</option><option>Technology</option><option>Marketing</option><option>Finance</option><option>Education</option><option>Healthcare</option><option>Design</option></select></div>
+          <div class="filter-tip"><span>✦</span><strong>Quick tip</strong><p>Save roles you like so you can come back to them later.</p></div>
+        </aside>
+        <div class="job-results"><div class="results-top"><div><h2>Explore open roles</h2><p id="resultCount">Showing all opportunities</p></div><select id="sortJobs" class="sort-select" aria-label="Sort jobs"><option value="recommended">Recommended</option><option value="title">Title A–Z</option><option value="salary">Salary: high to low</option></select></div><div class="job-list" id="jobList"></div><div class="empty-state hidden" id="emptyState"><div>⌕</div><h3>No jobs found</h3><p>Try a different keyword or clear some filters.</p><button class="button button-primary" id="emptyClear">Clear filters</button></div></div>
+      </div>
+    </section>
+
+    <section class="page" id="signinPage" data-view="signin">
+      <div class="auth-layout">
+        <div class="auth-visual"><a href="#home" class="brand brand-light" data-page="home"><span class="brand-mark"><svg viewBox="0 0 40 40"><circle cx="17" cy="17" r="10.5"></circle><circle cx="17" cy="17" r="4.2"></circle><path d="M25 25 34 34"></path><path d="M12 17h10M17 12v10"></path></svg></span><span>Find<span>Jobs</span></span></a><div class="auth-visual-copy"><span class="eyebrow light-eyebrow">YOUR NEXT CHAPTER</span><h2>Good work.<br><span>Great possibilities.</span></h2><p>Sign in to keep your career journey moving.</p><ul><li>✓ Save jobs you love</li><li>✓ Keep track of applications</li><li>✓ Discover roles made for you</li></ul></div><div class="auth-visual-footer">Find your place. Make your mark. <span>✦</span></div></div>
+        <div class="auth-form-wrap"><div class="auth-form-card"><div class="auth-mobile-brand"><span class="brand-mark"><svg viewBox="0 0 40 40"><circle cx="17" cy="17" r="10.5"></circle><circle cx="17" cy="17" r="4.2"></circle><path d="M25 25 34 34"></path></svg></span>Find<span>Jobs</span></div><span class="eyebrow">WELCOME BACK</span><h1>Sign in to your account</h1><p class="auth-intro">Pick up where you left off.</p><form id="signinForm" class="auth-form"><label>Email address<input type="email" id="signinEmail" placeholder="you@example.com" required></label><label>Password<div class="password-wrap"><input type="password" id="signinPassword" placeholder="Enter your password" minlength="6" required><button type="button" id="togglePassword" aria-label="Show password">◉</button></div></label><div class="form-options"><label class="remember"><input type="checkbox" id="rememberMe"> Remember me</label><button type="button" class="text-link" id="forgotPassword">Forgot password?</button></div><button type="submit" class="button button-primary button-full">Sign in <span>→</span></button><div class="form-divider"><span>or continue with</span></div><button type="button" class="social-button" id="googleDemo"><span class="google-g">G</span> Continue with Google</button><p class="form-note" id="signinMessage" aria-live="polite"></p></form><p class="auth-switch">New to FindJobs? <button class="text-link" data-page="signup">Create an account</button></p><p class="demo-note">Demo interface: sign-in is not connected to a real account service.</p></div></div>
+      </div>
+    </section>
+
+    <section class="page" id="signupPage" data-view="signup">
+      <div class="signup-wrap"><div class="signup-card"><a href="#home" class="brand" data-page="home"><span class="brand-mark"><svg viewBox="0 0 40 40"><circle cx="17" cy="17" r="10.5"></circle><circle cx="17" cy="17" r="4.2"></circle><path d="M25 25 34 34"></path></svg></span><span>Find<span>Jobs</span></span></a><span class="eyebrow">START SOMETHING NEW</span><h1>Create your account</h1><p class="auth-intro">Build your profile and find opportunities that fit.</p><form id="signupForm" class="auth-form"><label>Full name<input type="text" id="signupName" placeholder="Your full name" required></label><label>Email address<input type="email" id="signupEmail" placeholder="you@example.com" required></label><label>Create password<input type="password" id="signupPassword" minlength="6" placeholder="At least 6 characters" required></label><button type="submit" class="button button-primary button-full">Create account <span>→</span></button><p id="signupMessage" class="form-note" aria-live="polite"></p></form><p class="auth-switch">Already have an account? <button class="text-link" data-page="signin">Sign in</button></p><p class="demo-note">Demo interface only. No personal information is sent or stored.</p></div></div>
+    </section>
+
+    <section class="page" id="aboutPage" data-view="about">
+      <div class="about-hero"><div><span class="eyebrow light-eyebrow">MORE THAN A JOB BOARD</span><h1>Big dreams deserve<br><span>real opportunities.</span></h1><p>We're building a simpler, more human way to connect people with work that matters.</p><button class="button button-light" data-page="jobs">Explore opportunities <span>→</span></button></div><div class="about-hero-art"><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><div class="art-letter">FJ<span>✦</span></div><div class="art-tag">People first.<br>Always.</div></div></div>
+      <section class="section about-story"><div class="story-photo"><div class="story-photo-overlay"><span>FIND YOUR PLACE</span><strong>Every career<br>starts somewhere.</strong></div></div><div class="story-copy"><span class="eyebrow">OUR STORY</span><h2>Opportunity should feel <span>within reach.</span></h2><p>Finding a job can feel overwhelming. We created FindJobs around a simple idea: make the search clearer, more welcoming, and easier to navigate.</p><p>We bring opportunities into one place and help job seekers explore roles by their interests, work style, and goals. Whether you're starting out or ready for a change, your next step matters.</p><button class="link-button" data-page="jobs">Find your next step <span>→</span></button></div></section>
+      <section class="section values-section"><div class="section-heading centered"><div><span class="eyebrow">WHAT GUIDES US</span><h2>Built around <span>people</span></h2></div></div><div class="values-grid"><article class="value-card"><span class="value-icon value-blue">♡</span><h3>People first</h3><p>We believe every person deserves to explore meaningful work with confidence.</p></article><article class="value-card"><span class="value-icon value-purple">✦</span><h3>Make it simple</h3><p>Clear information and thoughtful tools help make the next step easier.</p></article><article class="value-card"><span class="value-icon value-green">↗</span><h3>Grow together</h3><p>Every new role can open a door to learning, growth, and possibility.</p></article></div></section>
+      <section class="about-bottom-cta"><h2>Ready to find what’s next?</h2><p>Your next opportunity is waiting to be discovered.</p><button class="button button-primary" data-page="jobs">Explore jobs <span>→</span></button></section>
+    </section>
+
+    <section class="page" id="contactPage" data-view="contact">
+      <div class="contact-wrap section"><div class="contact-copy"><span class="eyebrow">LET'S CONNECT</span><h1>Have a question?<br><span>We're listening.</span></h1><p>Send us a note about the platform, opportunities, or ideas that could make FindJobs better.</p><div class="contact-detail"><span class="contact-icon">✉</span><div><strong>Email us</strong><small>hello@findjobs.example</small></div></div><div class="contact-detail"><span class="contact-icon">◷</span><div><strong>Response time</strong><small>Usually within 2 business days</small></div></div></div><form class="contact-form" id="contactForm"><h2>Send a message</h2><label>Your name<input type="text" id="contactName" placeholder="Full name" required></label><label>Email address<input type="email" id="contactEmail" placeholder="you@example.com" required></label><label>What's this about?<select id="contactTopic"><option>General question</option><option>Job listing</option><option>Partnership</option><option>Feedback</option></select></label><label>Message<textarea id="contactMessage" rows="4" placeholder="Tell us how we can help..." required></textarea></label><button class="button button-primary button-full" type="submit">Send message <span>→</span></button><p class="form-note" id="contactNotice" aria-live="polite"></p><p class="demo-note">Demo form: messages are not sent to a server.</p></form></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><div class="footer-brand-col"><a href="#home" class="brand brand-light" data-page="home"><span class="brand-mark"><svg viewBox="0 0 40 40"><circle cx="17" cy="17" r="10.5"></circle><circle cx="17" cy="17" r="4.2"></circle><path d="M25 25 34 34"></path><path d="M12 17h10M17 12v10"></path></svg></span><span>Find<span>Jobs</span></span></a><p>Your future, our mission.<br>Find work that moves you.</p><div class="social-links"><a href="#contact" data-page="contact" aria-label="Contact">in</a><a href="#contact" data-page="contact" aria-label="Contact">𝕏</a><a href="#contact" data-page="contact" aria-label="Contact">◎</a></div></div><div class="footer-column"><h4>Explore</h4><a href="#jobs" data-page="jobs">Find jobs</a><a href="#home" data-page="home">Categories</a><a href="#about" data-page="about">About us</a></div><div class="footer-column"><h4>For job seekers</h4><a href="#signin" data-page="signin">Sign in</a><a href="#signup" data-page="signup">Create account</a><a href="#jobs" data-page="jobs">Saved jobs</a></div><div class="footer-column"><h4>Get in touch</h4><a href="#contact" data-page="contact">Contact us</a><a href="#contact" data-page="contact">Share feedback</a><span>hello@findjobs.example</span></div></div><div class="footer-bottom"><span>© 2026 FindJobs. Made for your next chapter.</span><span>Privacy-friendly demo · <a href="#about" data-page="about">Our mission</a></span></div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="job-modal" id="jobModal"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
